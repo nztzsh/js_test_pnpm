@@ -21,8 +21,8 @@ importers:
         specifier: ^1.4.0
         version: 1.4.0
       dotenv:
-        specifier: ^8.2.0
-        version: 8.6.0
+        specifier: 14.1.1
+        version: 14.1.1
       express:
         specifier: ^4.17.1
         version: 4.21.1
@@ -47,10 +47,6 @@ packages:
 
   '@types/bson@4.0.5':
     resolution: {integrity: sha512-vVLwMUqhYJSQ/WKcE60eFqcyuWse5fGH+NMAXHuKrUAPoryq3ATxk5o4bgYNtg5aOM4APVg7Hnb3ASqUYG0PKg==}
-
-  '@types/bson@4.2.4':
-    resolution: {integrity: sha512-SG23E3JDH6y8qF20a4G9txLuUl+TCV16gxsKyntmGiJez2V9VBJr1Y8WxTBBD6OgBVcvspQ7sxgdNMkXFVcaEA==}
-    deprecated: This is a stub types definition. bson provides its own type definitions, so you do not need this installed.
 
   '@types/mongodb@3.6.20':
     resolution: {integrity: sha512-WcdpPJCakFzcWWD9juKoZbRtQxKIMYF/JIAM4JrNHrMcnJL6/a2NWjXxW7fo9hxboxxkg+icff8d7+WIEvKgYQ==}
@@ -127,10 +123,6 @@ packages:
   bson@1.1.6:
     resolution: {integrity: sha512-EvVNVeGo4tHxwi8L6bPj3y3itEvStdwvvlojVxxbyYfoaxJ6keLgrTuKdyfEAszFK+H3olzBuafE0yoh0D1gdg==}
     engines: {node: '>=0.6.19'}
-
-  bson@6.10.0:
-    resolution: {integrity: sha512-ROchNosXMJD2cbQGm84KoP7vOGPO6/bOAW0veMMbzhXLqoZptcaYRVLitwvuhwhjjpU1qP4YZRWLhgETdgqUQw==}
-    engines: {node: '>=16.20.1'}
 
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -260,9 +252,9 @@ packages:
     resolution: {integrity: sha512-bwy0MGW55bG41VqxxypOsdSdGqLwXPI/focwgTYCFMbdUiBAxLg9CFzG08sz2aqzknwiX7Hkl0bQENjg8iLByw==}
     engines: {node: '>=8'}
 
-  dotenv@8.6.0:
-    resolution: {integrity: sha512-IrPdXQsk2BbzvCBGBOTmmSH5SodmqZNt4ERAZDmW4CT+tL8VtvinqywuANaFu4bOMWki16nqf0e4oC0QIaDr/g==}
-    engines: {node: '>=10'}
+  dotenv@14.1.1:
+    resolution: {integrity: sha512-g7ptu0p9gCDIWTLY62fTYT+PasFLNj9FRGg8Wmjr0v/dOL2LEe8guNjpkY59OX91fwIFU7qth4RO89pDSTTG2g==}
+    engines: {node: '>=12'}
 
   ee-first@1.1.1:
     resolution: {integrity: sha512-WMwm9LhRUo+WUaRN+vRuETqG89IgZphVSNkdFgeb6sS/E4OrDIN7t48CAewSHXc6C8lefD8KKfr5vY61brQlow==}
@@ -821,13 +813,9 @@ snapshots:
     dependencies:
       '@types/node': 22.10.1
 
-  '@types/bson@4.2.4':
-    dependencies:
-      bson: 6.10.0
-
   '@types/mongodb@3.6.20':
     dependencies:
-      '@types/bson': 4.2.4
+      '@types/bson': 4.0.5
       '@types/node': 22.10.1
 
   '@types/node@22.10.1':
@@ -910,8 +898,6 @@ snapshots:
       concat-map: 0.0.1
 
   bson@1.1.6: {}
-
-  bson@6.10.0: {}
 
   bytes@3.1.2: {}
 
@@ -1005,7 +991,7 @@ snapshots:
 
   detect-libc@2.0.3: {}
 
-  dotenv@8.6.0: {}
+  dotenv@14.1.1: {}
 
   ee-first@1.1.1: {}
 
