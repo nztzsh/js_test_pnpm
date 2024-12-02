@@ -30,8 +30,8 @@ importers:
         specifier: ^5.10.3
         version: 5.13.22
       passport:
-        specifier: ^0.4.1
-        version: 0.4.1
+        specifier: 0.6.0
+        version: 0.6.0
       passport-local:
         specifier: ^1.0.0
         version: 1.0.0
@@ -47,10 +47,6 @@ packages:
 
   '@types/bson@4.0.5':
     resolution: {integrity: sha512-vVLwMUqhYJSQ/WKcE60eFqcyuWse5fGH+NMAXHuKrUAPoryq3ATxk5o4bgYNtg5aOM4APVg7Hnb3ASqUYG0PKg==}
-
-  '@types/bson@4.2.4':
-    resolution: {integrity: sha512-SG23E3JDH6y8qF20a4G9txLuUl+TCV16gxsKyntmGiJez2V9VBJr1Y8WxTBBD6OgBVcvspQ7sxgdNMkXFVcaEA==}
-    deprecated: This is a stub types definition. bson provides its own type definitions, so you do not need this installed.
 
   '@types/mongodb@3.6.20':
     resolution: {integrity: sha512-WcdpPJCakFzcWWD9juKoZbRtQxKIMYF/JIAM4JrNHrMcnJL6/a2NWjXxW7fo9hxboxxkg+icff8d7+WIEvKgYQ==}
@@ -127,10 +123,6 @@ packages:
   bson@1.1.6:
     resolution: {integrity: sha512-EvVNVeGo4tHxwi8L6bPj3y3itEvStdwvvlojVxxbyYfoaxJ6keLgrTuKdyfEAszFK+H3olzBuafE0yoh0D1gdg==}
     engines: {node: '>=0.6.19'}
-
-  bson@6.10.0:
-    resolution: {integrity: sha512-ROchNosXMJD2cbQGm84KoP7vOGPO6/bOAW0veMMbzhXLqoZptcaYRVLitwvuhwhjjpU1qP4YZRWLhgETdgqUQw==}
-    engines: {node: '>=16.20.1'}
 
   bytes@3.1.2:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
@@ -584,8 +576,8 @@ packages:
     resolution: {integrity: sha512-CB97UUvDKJde2V0KDWWB3lyf6PC3FaZP7YxZ2G8OAtn9p4HI9j9JLP9qjOGZFvyl8uwNT8qM+hGnz/n16NI7oA==}
     engines: {node: '>= 0.4.0'}
 
-  passport@0.4.1:
-    resolution: {integrity: sha512-IxXgZZs8d7uFSt3eqNjM9NQ3g3uQCW5avD8mRNoXV99Yig50vjuaez6dQK2qC0kVWPRTujxY0dWgGfT09adjYg==}
+  passport@0.6.0:
+    resolution: {integrity: sha512-0fe+p3ZnrWRW74fe8+SvCyf4a3Pb2/h7gFkQ8yTJpAO50gDzlfjZUZTO1k5Eg9kUct22OxHLqDZoKUWRHOh9ug==}
     engines: {node: '>= 0.4.0'}
 
   path-is-absolute@1.0.1:
@@ -821,13 +813,9 @@ snapshots:
     dependencies:
       '@types/node': 22.10.1
 
-  '@types/bson@4.2.4':
-    dependencies:
-      bson: 6.10.0
-
   '@types/mongodb@3.6.20':
     dependencies:
-      '@types/bson': 4.2.4
+      '@types/bson': 4.0.5
       '@types/node': 22.10.1
 
   '@types/node@22.10.1':
@@ -910,8 +898,6 @@ snapshots:
       concat-map: 0.0.1
 
   bson@1.1.6: {}
-
-  bson@6.10.0: {}
 
   bytes@3.1.2: {}
 
@@ -1367,10 +1353,11 @@ snapshots:
 
   passport-strategy@1.0.0: {}
 
-  passport@0.4.1:
+  passport@0.6.0:
     dependencies:
       passport-strategy: 1.0.0
       pause: 0.0.1
+      utils-merge: 1.0.1
 
   path-is-absolute@1.0.1: {}
 
